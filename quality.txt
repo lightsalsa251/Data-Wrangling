@@ -1,0 +1,29 @@
+wrangling/hacking->gathering, extracting, cleaning and storing the data
+Mongodb gets the ready 
+There are probelems with our data
+
+Assessing the quality of data->
+We need to assess our data in to:
+test assumptions about
+values
+data types
+shapes
+
+We also need to identify errors or outliers
+Finally we need to assess the data for missing values and will our data support the queries we need to make
+
+
+Tabular Formats->
+What items/rows a dataset contains and what fields/coloumns do they have
+First row mostly will be the name of these fields
+
+tabular data is stored in csv files as scv files are very lightweight, each line is a single row, fields are
+separated by a delimeter usually a comma(there are tsv files with delimeter a tab character), stores only the data,
+there is no need for special purpose programs to run it, all csv files can be run on a spreadsheet.
+
+Open a big csv file in a excel sheet might be slow so we load it into a python dictionary
+
+We don't notice the garbage white space characters around the values which make a big difference when it comes to comparisons, we can remove them by the strip
+function.
+
+

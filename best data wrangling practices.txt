@@ -1,0 +1,4 @@
+1.look at how browser makes requests
+2.emulate in code
+3.if stuff blows up, look at your http traffic
+4.return to 1 until it works

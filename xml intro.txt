@@ -1,0 +1,71 @@
+If we want citations of a paper we can easily take its data in .xml format
+xml has encoded data that can be used for programming purposes
+like if we want to see bibliography than it will be present in a tag related to its name
+
+XML was designed for:
+1) Data Transfer
+There is no platform dependency
+2) Easy to write code for reading and writing
+3) Document Validation by providing a specification then all other data can be checked against it
+4) Human Readable
+5) Supports wide variety of Apps
+
+XML standard 
+robust parsers
+we can focus on our analysis
+its free and does not changes
+
+XML information can be modified programmatically
+It can be converted to other formats losslessly
+In XML data is stored as a key:value pair but some may store data as documents as well
+
+In XML elements are the basic building blocks
+<num>2342</num>
+there are nested elements
+Data can as document type
+<title>this is a course</title>
+Data can also be stored like
+<tag k="addr:housenumber" v="1040"/>
+This is a key:value pair
+
+There are attributes associated with elements like
+<node id="1" version="2">
+<tag ... />
+<tag ... />
+</node>
+here id and version are attributes
+Data of an element is in its attributes here
+But in these type of data there may be missing values
+
+In XML, the attribute values must always be quoted.
+
+This will generate an XML error:
+
+<message>salary < 1000</message>
+To avoid this error, replace the "<" character with an entity reference:
+
+<message>salary &lt; 1000</message>
+There are 5 pre-defined entity references in XML:
+
+&lt;	<	less than
+&gt;	>	greater than
+&amp;	&	ampersand 
+&apos;	'	apostrophe
+&quot;	"	quotation mark
+Only < and & are strictly illegal in XML, but it is a good habit to replace > with &gt; as well.
+
+The syntax for writing comments in XML is similar to that of HTML.
+
+<!-- This is a comment -->
+
+Two dashes in the middle of a comment are not allowed.
+
+Not allowed:
+
+<!-- This is a -- comment -->
+Strange, but allowed:
+
+<!-- This is a - - comment -->
+
+XML does not truncate multiple white-spaces
+Windows applications store a new line as: carriage return and line feed (CR+LF).

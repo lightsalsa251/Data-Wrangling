@@ -1,0 +1,111 @@
+JSON is used for modelling and transmitting data.
+for a particular row in the beattles dataset we can represent it in JSON as
+{
+'title" : "A hard day's night"
+"certification" : [
+{
+
+},
+{
+
+},
+]
+},
+{another row}
+
+certification has multiple entries so it is an array of objects
+JSON objects are like a dictionary/map
+
+Data Modelling in JSON ->
+Items may have different fields
+May have nested objects
+May have nested arrays
+
+JSON syntax is derived from JavaScript object notation syntax:
+
+Data is in name/value pairs
+Data is separated by commas
+Curly braces hold objects
+Square brackets hold arrays
+
+JSON names require double quotes. JavaScript names don't.
+
+In JSON, values must be one of the following data types:
+
+a string
+a number
+an object (JSON object)
+an array
+a boolean
+null
+
+The file type for JSON files is ".json"
+The MIME type for JSON text is "application/json"
+
+JSON is Like XML Because
+Both JSON and XML are "self describing" (human readable)
+Both JSON and XML are hierarchical (values within values)
+Both JSON and XML can be parsed and used by lots of programming languages
+Both JSON and XML can be fetched with an XMLHttpRequest
+
+JSON is Unlike XML Because
+JSON doesn't use end tag
+JSON is shorter
+JSON is quicker to read and write
+JSON can use arrays
+
+The biggest difference is:
+XML has to be parsed with an XML parser. JSON can be parsed by a standard JavaScript function
+
+JSON Objects
+Values in JSON can be objects.
+
+Example
+{
+"employee":{ "name":"John", "age":30, "city":"New York" }
+}
+JSON Arrays
+Values in JSON can be arrays.
+
+Example
+{
+"employees":[ "John", "Anna", "Peter" ]
+}
+
+{ "middlename":null }
+
+{ "sale":true }
+
+Each key/value pair is separated by a comma.
+
+Nested JSON Objects
+Values in a JSON object can be another JSON object.
+
+Example
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars": {
+        "car1":"Ford",
+        "car2":"BMW",
+        "car3":"Fiat"
+    }
+ }
+Nested Arrays->
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars": [
+        { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+        { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+        { "name":"Fiat", "models":[ "500", "Panda" ] }
+    ]
+ }
+
+JSONP is a method for sending JSON data without worrying about cross-domain issues.
+
+JSONP does not use the XMLHttpRequest object.
+
+JSONP uses the <script> tag instead.
+
+Through URL we specify our query to a web service

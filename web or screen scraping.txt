@@ -1,0 +1,15 @@
+Many times data is scraped from multiple sources
+Data can be taken out in tabular or json format
+we can inspect a web page to get data by right clicking on a page
+select has the options
+we need to use one of them to make a reqeuest
+There's a class attribute for the table which helps in parsing tables made in html
+
+build lists of options
+make http requests to download all data
+then parse the data files
+We work in this way so that we work with data we don't want to change
+After cleaning we may get dirty data meaning a bug in the parser
+Static data will make it easier to find the bug
+Retrieve the data only once as data does not change for other pieces of data
+
